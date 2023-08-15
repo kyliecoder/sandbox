@@ -1,12 +1,59 @@
-� git config --global user.name  'jhon.snow'
-� git config --global user.email 'info@jsnow.com'
-� git config --global --list
+﻿» git config --global user.name  'jhon.snow'
+» git config --global user.email 'info@jsnow.com'
+» git config --global --list
 ===========================================================
 Using 'master' as the name for the initial branch. This default branch name
 is subject to change. To configure the initial branch name to use in all
 of your new repositories, which will suppress this warning, call:
- 	� git config --global init.defaultBranch <name>
+ 	» git config --global init.defaultBranch <name>
  Names commonly chosen instead of 'master' are 'main', 'trunk' and
  'development'. The just-created branch can be renamed via this command:
-	� git branch -m <name>
+	» git branch -m <name>
 ===========================================================
+» git init
+
+» git status
+
+▬ git add [file name.extention]:
+»		$git add index.html
+» git add .
+» git add -A
+» git add *
+
+» git log
+
+▬ git commit -m 'message':
+»	$ git commit –m "this is new file"
+
+
+▬ git reset [file name.extention] :
+»	$ git reset 404.html
+▬ git rm --cached [file name.extention] :
+»	$ git rm --cached  index.html
+▬ git restore --staged [file name.extention] :
+»	 $ git restore --staged index.html
+
+» git show head
+
+» git show dbe46e7d096db
+
+▬ git show commit id1..commit id2 :	//show two commit
+» 	$ git show dbe46e7d096db..e05f56144867  
+
+
+
+» git diff --staged
+» git diff  main
+» git diff  HEAD
+▬ git diff commit_id1..commit_id2: //difference between two commit
+»	 git diff dbe46e7d096db..e05f5614486
+
+
+▬ git checkout -- [file name.extention]:
+»	$ git checkout -- index.html
+
+▬ git checkout [id commit] [file name] //  برگرداندن تغییرات فایلی به یکی از کامیت های قبلی
+» 	$ git checkout  dbe46e7d096db style.css
+
+
+software -> difftool git 
